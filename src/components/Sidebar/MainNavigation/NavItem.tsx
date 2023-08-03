@@ -5,9 +5,15 @@ interface NavItemProps {
   href: string;
   title: string;
   icon: ElementType;
+  withExpandIndicator?: boolean;
 }
 
-export function NavItem({ href, title, icon: Icon }: NavItemProps) {
+export function NavItem({
+  href,
+  title,
+  icon: Icon,
+  withExpandIndicator = true
+}: NavItemProps) {
   return (
     <a
       href={href}
@@ -17,7 +23,10 @@ export function NavItem({ href, title, icon: Icon }: NavItemProps) {
       <span className="font-medium text-zinc-700 group-hover:text-violet-500">
         {title}
       </span>
-      <ChevronDown className="ml-auto h-5 w-5 text-zinc-400 group-hover:text-violet-300" />
+
+      {withExpandIndicator && (
+        <ChevronDown className="ml-auto h-5 w-5 text-zinc-400 group-hover:text-violet-300" />
+      )}
     </a>
   );
 }
