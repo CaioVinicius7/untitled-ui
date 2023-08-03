@@ -3,6 +3,7 @@ import { Cog, LifeBuoy, Search } from "lucide-react";
 import { Logo } from "./Logo";
 import { MainNavigation } from "./MainNavigation";
 import { NavItem } from "./MainNavigation/NavItem";
+import { UsedSpaceWidget } from "./UsedSpaceWidget";
 
 export function Sidebar() {
   return (
@@ -36,6 +37,8 @@ export function Sidebar() {
             withExpandIndicator={false}
           />
         </nav>
+
+        <UsedSpaceWidget />
       </div>
     </aside>
   );
