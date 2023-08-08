@@ -24,7 +24,7 @@ function InputRoot({ ...props }: InputRootProps) {
     <div
       className="mx-1 flex w-full items-center gap-2 rounded-lg border border-zinc-300 px-3 py-3 shadow-sm focus-within:border-zinc-900"
       {...props}
-    ></div>
+    />
   );
 }
 
