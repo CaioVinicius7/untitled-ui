@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import type { ComponentProps } from "react";
 
 interface InputPrefixProps extends ComponentProps<"div"> {}
 
