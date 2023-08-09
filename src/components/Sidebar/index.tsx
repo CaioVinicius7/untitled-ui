@@ -1,6 +1,6 @@
 import { Cog, LifeBuoy, Search } from "lucide-react";
 
-import { Input } from "../Input";
+import { Input } from "../Form/Input";
 
 import { Logo } from "./Logo";
 import { MainNavigation } from "./MainNavigation";
