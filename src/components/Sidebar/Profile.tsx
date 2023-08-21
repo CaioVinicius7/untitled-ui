@@ -22,7 +22,10 @@ export function Profile() {
         </span>
       </div>
 
-      <button type="button" className="ml-auto p-2 hover:bg-zinc-50">
+      <button
+        type="button"
+        className="ml-auto rounded p-2 outline-none hover:bg-zinc-50 focus-visible:border-violet-300 focus-visible:ring-1 focus-visible:ring-violet-300"
+      >
         <LogOut className="h-5 w-5 text-zinc-500" />
       </button>
     </div>

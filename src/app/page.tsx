@@ -166,7 +166,7 @@ export default function Home() {
                   <SelectItem value="md" text="Markdown" />
                 </Select>
 
-                <div className="flex items-center gap-1">
+                <div className="flex w-fit items-center gap-1">
                   <button
                     type="button"
                     className="ml-auto p-2 hover:bg-zinc-50"
