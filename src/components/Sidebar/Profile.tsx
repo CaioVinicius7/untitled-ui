@@ -15,11 +15,11 @@ export function Profile() {
       />
 
       <div className="flex flex-1 flex-col truncate">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Caio Vinícius
         </span>
 
-        <span className="truncate text-sm text-zinc-500">
+        <span className="darK:text-zinc-400 truncate text-sm text-zinc-500">
           caio1525pereira@gmail.com
         </span>
       </div>
