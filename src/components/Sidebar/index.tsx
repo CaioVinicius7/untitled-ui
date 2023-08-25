@@ -10,6 +10,7 @@ import { MainNavigation } from "./MainNavigation";
 import { NavItem } from "./MainNavigation/NavItem";
 import { UsedSpaceWidget } from "./UsedSpaceWidget";
 import { Profile } from "./Profile";
+import { ToggleThemeButton } from "./ToggleThemeButton";
 import { Button } from "../Button";
 
 export function Sidebar() {
@@ -18,13 +19,17 @@ export function Sidebar() {
       <div className="flex items-center justify-between">
         <Logo />
 
-        <Collapsible.Trigger className="lg:hidden" asChild>
-          <Button variant="ghost">
-            <Menu className="h-6 w-6 group-data-[state=open]:hidden" />
+        <div className="flex items-center gap-2">
+          <ToggleThemeButton />
 
-            <X className="h-6 w-6 group-data-[state=closed]:hidden" />
-          </Button>
-        </Collapsible.Trigger>
+          <Collapsible.Trigger className="lg:hidden" asChild>
+            <Button variant="ghost">
+              <Menu className="h-6 w-6 group-data-[state=open]:hidden" />
+
+              <X className="h-6 w-6 group-data-[state=closed]:hidden" />
+            </Button>
+          </Collapsible.Trigger>
+        </div>
       </div>
 
       <Collapsible.Content
